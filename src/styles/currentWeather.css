@@ -1,0 +1,85 @@
+/* General Container Styling */
+.current-weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* min-height: 100vh; */
+  /* background: linear-gradient(135deg, #00bcd4, #ffeb3b); Gradient background */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Main Weather Card Styling */
+.current-weather {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 360px !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to make the card pop */
+.current-weather:hover {
+  transform: translateY(-10px);
+}
+
+/* City Name Styling */
+.city-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3f51b5;
+  text-transform: capitalize;
+}
+
+/* Weather Description Styling */
+.weather-description {
+  font-size: 1.2em;
+  color: #0c1c78;
+  margin-bottom: 20px;
+}
+
+/* Temperature Styling */
+.temperature p {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0px;
+  color: #ff5722; /* Orange color for the temperature */
+}
+
+/* Weather Icon Styling */
+.weather-icon img {
+  width: 180px;
+  height: 180px;
+  margin: 0px;
+  /* margin-top: 20px; */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 500px) {
+  .current-weather {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .city-name {
+    font-size: 1.8em;
+  }
+
+  .temperature p {
+    font-size: 2em;
+  }
+
+  .weather-icon img {
+    width: 70px;
+    height: 70px;
+  }
+}
